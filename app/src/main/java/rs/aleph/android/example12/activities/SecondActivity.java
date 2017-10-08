@@ -1,7 +1,10 @@
 package rs.aleph.android.example12.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.View;
 import android.widget.Toast;
 
 import rs.aleph.android.example12.R;
@@ -80,4 +83,20 @@ public class SecondActivity extends Activity {
         Toast toast = Toast.makeText(getBaseContext(), "SecondActivity.onDestroy()", Toast.LENGTH_SHORT);
         toast.show();
     }
+    // startujemo third activity
+    public void btnStartActivityClicked(View view) {
+        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+        startActivity(intent);
+    }
+
+    // otvaramo kameru
+    public void btnOpenCameraClicked(View view) {
+        Intent intent2 = new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
+        startActivity(intent2);
+    }
 }
+
+
+}
+
+
