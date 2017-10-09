@@ -8,7 +8,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="open third activity"
+        android:text="@string/open_third_activity"
         android:id="@+id/start_activity"
         android:onClick="btnStartActivityClicked"/>
 
@@ -16,7 +16,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OPEN CAMERA"
+        android:text="@string/open_camera"
         android:id="@+id/open_browser"
         android:onClick="btnOpenBrowserClicked"/>
 

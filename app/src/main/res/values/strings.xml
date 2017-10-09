@@ -3,4 +3,6 @@
 
     <string name="start_activity">Start an Activity</string>
     <string name="open_browser">Open Web Browser</string>
+    <string name="open_third_activity">Open Third Activityr</string>
+    <string name="open_camera">Open Camera</string>
 </resources>
