@@ -1,4 +1,4 @@
-package rs.aleph.android.example12.activities;
+package rs.aleph.android.example12.activities.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,14 @@ import rs.aleph.android.example12.R;
 
 // Each activity extends Activity class
 public class SecondActivity extends Activity {
+
+    private int position = 0;
+
+    private Jelo[] fruits = new Fruit[] {
+            new Fruit("apples.jpg", "Apples", "The apple tree is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple.", 5.0f),
+            new Fruit("bananas.jpg", "Bananas", "The banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.", 4.0f),
+            new Fruit("oranges.jpg", "Oranges", "The orange is the fruit of the citrus species Citrus in the family Rutaceae.", 3.0f)
+    };
 
     // onCreate method is a lifecycle method called when he activity is starting
     @Override

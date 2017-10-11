@@ -1,4 +1,4 @@
-package rs.aleph.android.example12.activities;
+package rs.aleph.android.example12.activities.Activities;
 
 import android.app.Activity;
 import android.os.Bundle;
